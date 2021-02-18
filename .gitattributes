@@ -1,0 +1,3 @@
+# Binary files (no line-ending conversions), diff using hexdump
+*.data binary diff=hex
+*.str binary diff=hex
