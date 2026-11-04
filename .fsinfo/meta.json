@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "languages": ["EN", "DE", "JP"],
+  "kanaLang": 2,
+  "csvDir": null
+}

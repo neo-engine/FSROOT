@@ -1,0 +1,99 @@
+#pragma once
+#include <nds/ndstypes.h>
+namespace MAP {
+    constexpr u16 BERRY_TREE_COUNT                       = 89;
+    constexpr u16 BERRY_TREE_DEFAULT[ BERRY_TREE_COUNT ] = {
+        155, // 0  ORAN BERRY
+        151, // 1  PECHA BERRY
+        155, // 2  ORAN BERRY
+        0,   // 3  (no default)
+        151, // 4  PECHA BERRY
+        155, // 5  ORAN BERRY
+        0,   // 6  (no default)
+        0,   // 7  (no default)
+        149, // 8  CHERI BERRY
+        149, // 9  CHERI BERRY
+        0,   // 10  (no default)
+        154, // 11  LEPPA BERRY
+        150, // 12  CHESTO BERRY
+        168, // 13  PINAP BERRY
+        200, // 14  CHILAN BERRY
+        686, // 15  ROSELI BERRY
+        0,   // 16  (no default)
+        0,   // 17  (no default)
+        167, // 18  WEPEAR BERRY
+        168, // 19  PINAP BERRY
+        166, // 20  NANAB BERRY
+        154, // 21  LEPPA BERRY
+        166, // 22  NANAB BERRY
+        186, // 23  WACAN BERRY
+        154, // 24  LEPPA BERRY
+        0,   // 25  (no default)
+        149, // 26  CHERI BERRY
+        161, // 27  MAGO BERRY
+        160, // 28  WIKI BERRY
+        163, // 29  IAPAPA BERRY
+        162, // 30  AGUAV BERRY
+        159, // 31  FIGY BERRY
+        187, // 32  RINDO BERRY
+        189, // 33  CHOPLE BERRY
+        158, // 34  SITRUS BERRY
+        187, // 35  RINDO BERRY
+        189, // 36  CHOPLE BERRY
+        158, // 37  SITRUS BERRY
+        158, // 38  SITRUS BERRY
+        192, // 39  COBA BERRY
+        191, // 40  SHUCA BERRY
+        158, // 41  SITRUS BERRY
+        197, // 42  HABAN BERRY
+        158, // 43  SITRUS BERRY
+        154, // 44  LEPPA BERRY
+        158, // 45  SITRUS BERRY
+        174, // 46  TAMATO BERRY
+        183, // 47  BELUE BERRY
+        173, // 48  GREPA BERRY
+        172, // 49  HONDEW BERRY
+        175, // 50  CORNN BERRY
+        176, // 51  MAGOST BERRY
+        177, // 52  RABUTA BERRY
+        178, // 53  NOMEL BERRY
+        179, // 54  SPELON BERRY
+        180, // 55  PAMTRE BERRY
+        181, // 56  WATMEL BERRY
+        182, // 57  DURIN BERRY
+        190, // 58  KEBIA BERRY
+        191, // 59  SHUCA BERRY
+        194, // 60  TANGA BERRY
+        197, // 61  HABAN BERRY
+        158, // 62  SITRUS BERRY
+        199, // 63  BABIRI BERRY
+        154, // 64  LEPPA BERRY
+        198, // 65  COLBUR BERRY
+        195, // 66  CHARTI BERRY
+        172, // 67  HONDEW BERRY
+        192, // 68  COBA BERRY
+        158, // 69  SITRUS BERRY
+        170, // 70  KELPSY BERRY
+        171, // 71  QUALOT BERRY
+        165, // 72  BLUK BERRY
+        158, // 73  SITRUS BERRY
+        154, // 74  LEPPA BERRY
+        157, // 75  LUM BERRY
+        158, // 76  SITRUS BERRY
+        184, // 77  OCCA BERRY
+        187, // 78  RINDO BERRY
+        186, // 79  WACAN BERRY
+        155, // 80  ORAN BERRY
+        157, // 81  LUM BERRY
+        158, // 82  SITRUS BERRY
+        157, // 83  LUM BERRY
+        155, // 84  ORAN BERRY
+        157, // 85  LUM BERRY
+        158, // 86  SITRUS BERRY
+        157, // 87  LUM BERRY
+        154, // 88  LEPPA BERRY
+    };
+    constexpr u16 berryTreeDefaultItem( u8 p_treeIdx ) {
+        return p_treeIdx < BERRY_TREE_COUNT ? BERRY_TREE_DEFAULT[ p_treeIdx ] : 0;
+    }
+} // namespace MAP
