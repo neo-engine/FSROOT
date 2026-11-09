@@ -1,5 +1,6 @@
 #include "gen/itemNames.h"
 #include "gen/pokemonNames.h"
+#include "pokemon.h"
 
 bool hasBattleTransform( u16 p_speciesId ) {
     switch( p_speciesId ) {
@@ -57,7 +58,7 @@ bool hasBattleTransform( u16 p_speciesId ) {
     }
 }
 
-inline bool isTradeEvolution( u16 p_speciesId ) {
+bool isTradeEvolution( u16 p_speciesId ) {
     switch( p_speciesId ) {
     case PKMN_ALAKAZAM:
     case PKMN_MACHAMP:
